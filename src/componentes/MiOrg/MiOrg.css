@@ -1,0 +1,42 @@
+.orgSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.title{
+    color: #6278F7;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+
+.orgSection img{
+    width: 6rem; 
+    cursor: pointer;
+}
+ 
+@media screen and (max-width: 768px){
+    
+    .title{
+        font-size: 2rem;
+    }
+    
+    .orgSection img{
+        width: 4rem; 
+    }
+}
+
+@media screen and (max-width: 576px){
+    .title{
+        font-size: 1.5rem;
+        margin-right: 1rem;
+
+    }
+    
+    .orgSection img{
+        width: 4rem; 
+    }
+}
