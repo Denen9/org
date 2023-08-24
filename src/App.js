@@ -19,14 +19,6 @@ function App() {
   },
   {
     id: uuid(),
-    equipo: "Programación",
-    foto: "https://github.com/genesysaluralatam.png",
-    nombre: "Genesys Rondón",
-    puesto: "Desarrolladora de software e instructora",
-    fav: false
-  },
-  {
-    id: uuid(),
     equipo: "UX y Diseño",
     foto: "https://github.com/JeanmarieAluraLatam.png",
     nombre: "Jeanmarie Quijada",
@@ -154,6 +146,9 @@ function App() {
     <div>
       <Header />
       {/* {mostrarFormulario ? <Formulario /> : <></>} */}
+
+      <MiOrg cambiarMostrar={cambiarMostrar} />
+      
       {
         mostrarFormulario && <Formulario
           equipos={equipos.map((equipo) => equipo.titulo)}
@@ -161,8 +156,6 @@ function App() {
           crearEquipo={crearEquipo}
         />
       }
-
-      <MiOrg cambiarMostrar={cambiarMostrar} />
 
       {
         equipos.map((equipo) => <Equipo
